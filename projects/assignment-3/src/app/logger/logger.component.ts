@@ -16,11 +16,6 @@ export class LoggerComponent {
     this.count++;
 
     let currentDate: Date = new Date();
-
-    if (this.count > 4) {
-      document.getElementById('log-item')?.classList.add('bg-info');
-    }
-
-    this.logs.push(currentDate + 'clicked time: ' + this.count);
+    this.logs.push(currentDate + '    TIMES CLICKED: ' + this.count);
   }
 }

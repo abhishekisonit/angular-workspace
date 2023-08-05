@@ -4,15 +4,18 @@
       <button class="btn btn-primary" (click)="onClickButton()">
         Hide / Show
       </button>
-      <p class="card-text" [hidden]="isVisible">
+      <p class="card-text" *ngIf="isVisible">
         This is a secret. Don't speak about it.
       </p>
-      <ul>
-        <li id="log-item" class="card-text" *ngFor="let log of logs">
-          {{ logs }}
-        </li>
-      </ul>
-      <p></p>
+
+      <div
+        id="log-item"
+        class="card-text"
+        *ngFor="let log of logs; let i = index"
+        [ngStyle]="{ backgroundColor: i >= 5 ? 'aqua' : 'transparent' }"
+      >
+        {{ log }}
+      </div>
     </div>
   </div>
 </div>
