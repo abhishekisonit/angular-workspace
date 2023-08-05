@@ -101,15 +101,14 @@
             "outputPath": "dist/assignment-2",
             "index": "projects/assignment-2/src/index.html",
             "main": "projects/assignment-2/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/assignment-2/tsconfig.app.json",
             "assets": [
               "projects/assignment-2/src/favicon.ico",
               "projects/assignment-2/src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/assignment-2/src/styles.css"
             ],
             "scripts": []
@@ -162,18 +161,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/assignment-2/tsconfig.spec.json",
             "assets": [
               "projects/assignment-2/src/favicon.ico",
               "projects/assignment-2/src/assets"
             ],
-            "styles": [
-              "projects/assignment-2/src/styles.css"
-            ],
+            "styles": ["projects/assignment-2/src/styles.css"],
             "scripts": []
           }
         }
