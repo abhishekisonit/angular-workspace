@@ -7,7 +7,12 @@
       <p class="card-text" [hidden]="isVisible">
         This is a secret. Don't speak about it.
       </p>
-      <p class="card-text background"></p>
+      <ul>
+        <li id="log-item" class="card-text" *ngFor="let log of logs">
+          {{ logs }}
+        </li>
+      </ul>
+      <p></p>
     </div>
   </div>
 </div>
