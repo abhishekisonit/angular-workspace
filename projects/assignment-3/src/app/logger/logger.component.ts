@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
 })
 export class LoggerComponent {
   title = 'app-logger';
+
+  isVisible: boolean = true;
+
+  onClickButton() {
+    this.isVisible = !this.isVisible;
+
+    
+  }
 }

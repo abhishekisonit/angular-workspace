@@ -1,1 +1,13 @@
-<p>logger component starts!</p>
+<div class="container justify-content-center m-4 text-center w-50">
+  <div class="card">
+    <div class="card-body">
+      <button class="btn btn-primary" (click)="onClickButton()">
+        Hide / Show
+      </button>
+      <p class="card-text" [hidden]="isVisible">
+        This is a secret. Don't speak about it.
+      </p>
+      <p class="card-text background"></p>
+    </div>
+  </div>
+</div>
